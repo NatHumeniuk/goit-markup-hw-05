@@ -381,6 +381,7 @@ img {
 .footer-sect .container {
   display: flex;
   align-items: baseline;
+  position: relative;
 }
 .footer-logo-container {
   margin-right: 120px;
@@ -434,6 +435,79 @@ img {
 .footer-social-link-name:focus {
   background-color: var(--success-green-color);
 }
+.subscribe-container {
+  position: absolute;
+  display: flex;
+  right: 15px;
+  display: flex;
+}
+.subscribe-form-footer {
+  display: flex;
+  align-items: flex-end;
+}
+.subscribe-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+.subscribe-input {
+  padding: 8px 0 8px 16px;
+  min-width: 264px;
+  min-height: 40px;
+  border: 1px solid var(--primary-white-color);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  background-color: var(--primary-dark-color);
+  outline: transparent;
+}
+.subscribe-input::placeholder {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+}
+.subscribe-footer-btn {
+  height: 40px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+  background-color: var(--primary-brand-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.telegram-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-telegram {
+  margin-left: 16px;
+  fill: var(--primary-white-color);
+}
+.subscribe-footer-btn:hover,
+.subscribe-footer-btn:focus {
+  background-color: var(--pressed-ocean-color);
+}
 .backdrop {
   display: flex;
   position: fixed;
@@ -455,6 +529,8 @@ img {
 .modal {
   display: flex;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   left: 50%;
   min-height: 584px;
@@ -496,6 +572,180 @@ img {
 .close-btn:hover .icon-close-btn,
 .close-btn:focus .icon-close-btn {
   fill: var(--primary-white-color);
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 72px;
+  width: 100%;
+  padding: 0 24px 24px;
+  margin: 0;
+}
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+}
+.modal-form-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-color);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.modal-form-label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--helper-text-color);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.input-container {
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+.input-field {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--primary-dark-color);
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--primary-dark-color);
+  border-radius: 4px;
+  margin: 0;
+  padding: 0 0 0 38px;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-field:is(:hover, :focus) {
+  border: 1px solid var(--primary-brand-color);
+}
+.modal-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--primary-dark-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-field:is(:hover, :focus) + .modal-input-icon {
+  fill: var(--primary-brand-color);
+}
+.comment-label {
+  margin-bottom: 16px;
+}
+.modal-text-comment {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--primary-dark-color);
+  width: 100%;
+  border: 1px solid var(--primary-dark-color);
+  border-radius: 4px;
+  margin: 4px 0 0 0;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-text-comment:is(:hover, :focus) {
+  border: 1px solid var(--primary-brand-color);
+}
+.policy-container {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+.policy-checkbox {
+  display: none;
+  pointer-events: none;
+}
+.check-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  padding: 3px 2px;
+  border-radius: 2px;
+  border: 1px solid var(--primary-dark-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-icon {
+  fill: var(--primary-white-color);
+}
+.policy-checkbox:checked + label > span {
+  background-color: var(--pressed-ocean-color);
+  border: 1px solid var(--pressed-ocean-color);
+}
+.policy-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 26px;
+  margin-bottom: 16px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--helper-text-color);
+}
+.policy-link {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+}
+.modal-submit-btn {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
+  background-color: var(--primary-brand-color);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto 24px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-submit-btn:is(:hover, :focus) {
+  background-color: var(--pressed-ocean-color);
 }
 .examples {
   padding-top: 100px;
