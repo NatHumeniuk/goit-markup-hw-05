@@ -436,11 +436,9 @@ img {
   background-color: var(--success-green-color);
 }
 .subscribe-container {
-  display: flex;
-  flex-direction: column;
   margin-left: 80px;
 }
-.subscribe-form-label {
+.subscribe-form-title {
   margin-bottom: 16px;
   font-family: var(--primary-font);
   font-size: 16px;
@@ -455,7 +453,7 @@ img {
   gap: 24px;
 }
 .subscribe-input {
-  padding: 8px 0 8px 16px;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
   border: 1px solid var(--primary-white-color);
@@ -601,8 +599,10 @@ img {
   margin-bottom: 4px;
 }
 .input-container {
-  position: relative;
   margin-bottom: 8px;
+}
+.input-field-container {
+  position: relative;
 }
 .input-field {
   font-family: var(--primary-font);
@@ -614,7 +614,7 @@ img {
   color: var(--primary-dark-color);
   width: 100%;
   height: 40px;
-  border: 1px solid var(--primary-dark-color);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
   background-color: transparent;
@@ -648,7 +648,7 @@ img {
   color: var(--primary-dark-color);
   width: 100%;
   height: 120px;
-  border: 1px solid var(--primary-dark-color);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
