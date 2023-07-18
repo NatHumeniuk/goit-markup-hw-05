@@ -401,9 +401,6 @@ img {
   max-width: 264px;
   color: var(--light-mode-color);
 }
-.footer-social-container {
-  position: relative;
-}
 .footer-social-links {
   display: flex;
   margin: 0;
@@ -436,7 +433,7 @@ img {
   background-color: var(--success-green-color);
 }
 .subscribe-container {
-  margin-left: 80px;
+  margin-left: auto;
 }
 .subscribe-form-title {
   margin-bottom: 16px;
@@ -467,7 +464,6 @@ img {
   color: var(--primary-white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
-  outline: transparent;
 }
 .subscribe-input::placeholder {
   color: var(--primary-white-color);
@@ -520,11 +516,7 @@ img {
   pointer-events: none;
 }
 .modal {
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  justify-content: center;
-  align-items: center;
   top: 50%;
   left: 50%;
   min-height: 584px;
@@ -639,6 +631,7 @@ img {
   margin-bottom: 16px;
 }
 .modal-text-comment {
+  display: block;
   font-family: var(--primary-font);
   font-size: 12px;
   font-style: normal;
@@ -666,6 +659,7 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   padding: 3px 2px;
@@ -682,6 +676,7 @@ img {
   fill: var(--light-mode-color);
 }
 .policy-label {
+  display: block;
   font-family: var(--primary-font);
   font-size: 12px;
   font-style: normal;
